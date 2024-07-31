@@ -40,7 +40,7 @@ with intro:
 
 with eda:
 
-    raw_data = pd.read_csv('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/data/raw/Dados Históricos - Ibovespa (2020-2024).csv', converters={'Data': pd.to_datetime}, thousands='.')
+    raw_data = pd.read_csv('data/raw/Dados Históricos - Ibovespa (2020-2024).csv', converters={'Data': pd.to_datetime}, thousands='.')
 
     st.subheader('Raw Data')
 
