@@ -66,7 +66,7 @@ with eda:
     '''
     
     '''
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_feature_behaviors.html', 'r') as f:
+    with open('reports/figures/ibov_feature_behaviors.html', 'r') as f:
         ibov_feature_behaviors = f.read()
     
     # st.html(ibov_feature_behaviors)
@@ -76,7 +76,7 @@ with eda:
     Os dados aparentam ser semelhantes e com uma tendência de alta no longo prazo.
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/distribution_boxplot.html', 'r') as f:
+    with open('reports/figures/distribution_boxplot.html', 'r') as f:
         ibov_distribution_boxplot = f.read()
     
     components.html(ibov_distribution_boxplot, height=400, width=700)
@@ -92,7 +92,7 @@ with eda:
     Como o dataset possui informações desde 1992 é interessante avaliar o comportamento dos preços em diferentes janelas temporais
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_timeframe_behaviors.html', 'r') as f:
+    with open('reports/figures/ibov_timeframe_behaviors.html', 'r') as f:
         ibov_timeframe_behaviors = f.read()
 
     components.html(ibov_timeframe_behaviors, height=1200, width=700)
@@ -119,7 +119,7 @@ with eda:
 
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/seasonal_decomposition.html', 'r') as f:
+    with open('reports/figures/seasonal_decomposition.html', 'r') as f:
         seasonal_decomposition = f.read()
 
     components.html(seasonal_decomposition, height=800, width=700)
@@ -152,7 +152,7 @@ with split:
     externos e utilizar poucos dados pode indicar um modelo que não seja tão consistente).
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_train_test_split.html', 'r') as f:
+    with open('reports/figures/ibov_train_test_split.html', 'r') as f:
         ibov_train_test_split = f.read()
 
     st.components.v1.html(ibov_train_test_split, height=400, width=700)
@@ -164,7 +164,7 @@ with split:
     Permitindo uma avaliação mais completa e confiável do desempenho do modelo, levando em consideração as variações e tendências inerentes aos dados temporais.
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_train_cross_validation.html', 'r') as f:
+    with open('reports/figures/ibov_train_cross_validation.html', 'r') as f:
         ibov_train_cross_validation = f.read()
 
     st.components.v1.html(ibov_train_cross_validation, height=400, width=700)
@@ -204,7 +204,7 @@ with modelos:
     É frequentemente usado como um benchmark para avaliar a eficácia de modelos mais complexos devido à sua simplicidade e facilidade de implementação.
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_model_naive.html', 'r') as f:
+    with open('reports/figures/ibov_model_naive.html', 'r') as f:
         ibov_model_naive = f.read()
 
     st.components.v1.html(ibov_model_naive, height=400, width=700)
@@ -221,7 +221,7 @@ with modelos:
     É conhecido por seu bom desempenho em séries temporais com tendência e sazonalidade, tornando-o uma escolha robusta para essas características.
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_model_theta.html', 'r') as f:
+    with open('reports/figures/ibov_model_theta.html', 'r') as f:
         ibov_model_theta = f.read()
 
     st.components.v1.html(ibov_model_theta, height=400, width=700)
@@ -238,7 +238,7 @@ with modelos:
     É eficaz em séries temporais que mostram dependências autocorrelacionadas e pode capturar tendências e sazonalidades, sendo amplamente utilizado em diversas aplicações de previsão.
     '''
     
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_model_auto_arima.html', 'r') as f:
+    with open('reports/figures/ibov_model_auto_arima.html', 'r') as f:
         ibov_model_auto_arima = f.read()
 
     st.components.v1.html(ibov_model_auto_arima, height=400, width=700)
@@ -255,7 +255,7 @@ with modelos:
     É ideal para séries temporais com tendências não lineares e múltiplas sazonalidades, oferecendo uma abordagem flexível e robusta para previsões de longo prazo.
     '''    
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_model_prophet.html', 'r') as f:
+    with open('reports/figures/ibov_model_prophet.html', 'r') as f:
         ibov_model_prophet = f.read()
 
     st.components.v1.html(ibov_model_prophet, height=400, width=700)
@@ -272,7 +272,7 @@ with modelos:
     É bom para séries temporais que podem ser decompostas em componentes de nível, tendência e sazonalidade, oferecendo previsões precisas em diversas condições.
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_model_ets.html', 'r') as f:
+    with open('reports/figures/ibov_model_ets.html', 'r') as f:
         ibov_model_ets = f.read()
 
     st.components.v1.html(ibov_model_ets, height=400, width=700)
@@ -289,7 +289,7 @@ with modelos:
     É útil para séries temporais onde se deseja incorporar incerteza e controle de regularização, proporcionando uma abordagem equilibrada entre precisão e complexidade.
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_model_br_cds.html', 'r') as f:
+    with open('reports/figures/ibov_model_br_cds.html', 'r') as f:
         ibov_model_br_cds = f.read()
 
     st.components.v1.html(ibov_model_br_cds, height=400, width=700)
@@ -305,7 +305,7 @@ with modelos:
     É eficaz para séries temporais com padrões complexos e interações não lineares entre variáveis, permitindo uma interpretação clara e lógica das decisões de previsão.
     '''
 
-    with open('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/ibov_model_decision_trees.html', 'r') as f:
+    with open('reports/figures/ibov_model_decision_trees.html', 'r') as f:
         ibov_model_decision_trees = f.read()
 
     st.components.v1.html(ibov_model_decision_trees, height=400, width=700)
@@ -317,7 +317,7 @@ with modelos:
 
     st.subheader('Resultados sem validação cruzada')
 
-    accuracy_without_cross = pd.read_csv('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/accuracy_without_cross.csv')
+    accuracy_without_cross = pd.read_csv('reports/figures/accuracy_without_cross.csv')
 
     st.write(accuracy_without_cross)
 
@@ -332,7 +332,7 @@ with modelos:
 
     st.subheader('Resultados com validação cruzada')
 
-    accuracy_with_cross = pd.read_csv('/Users/andersonpacheco/Documents/Estudos/01 - Pós Graduacao/Tech Challenge/ibov-forecast/reports/figures/accuracy_with_cross.csv')
+    accuracy_with_cross = pd.read_csv('reports/figures/accuracy_with_cross.csv')
 
     st.write(accuracy_with_cross)
 
